@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Практика</title>
 	<link rel="stylesheet" href="style/style.css">
+	<script src="js/script.js" defer></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
 	<header class="header">
 		<div class="logo"><img src="image/logo.png" alt="">ТГСИИ</div>
 		<nav class="nav">
@@ -21,9 +21,30 @@
 			<a href="#">FAQ</a>
 			<a href="#">Контакты</a>
 		</nav>
-		<div class="user">Ученик<img src="image/stud.png" alt=""></div>
+		<div class="user">Войти<img src="image/stud.png" alt=""></div>
 	</header>
 	<main>
+
+		<div class="modal" id="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal-body">
+					<img src="img3.jpg" alt="">
+					<div class="info">
+						<h2>Курс Frontend-разработчика</h2>
+						<p><b>Формат:</b> Очно / Заочно</p>
+						<p><b>Кол-во часов:</b> 144 академических часа</p>
+						<p><b>Преподаватель:</b> Иван Иванов</p>
+						<p><b>Содержание:</b> Полный список тем...</p>
+						<p><b>Документ:</b> Диплом</p>
+						<p><b>Стоимость:</b> 40.000 рублей</p>
+						<button class="btn2">Оформить</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
 		<section class="one">
 			<div class="card">
 				<img src="image/3.png" alt="1">
@@ -77,17 +98,111 @@
 			<div class="slider">
 				<button class="arrows left"><img src="image/red0.png" alt=""></button>
 				<div class="cards">
-					<div class="card3">
+					<a href="#" class="card3">
 						<img src="image/red1.png" alt="">
-					</div>
-					<div class="card3">
+					</a>
+					<a href="#" class="card3">
 						<img src="image/red2.png" alt="">
-					</div>
-					<div class="card3">
+					</a>
+					<a href="#" class="card3">
 						<img src="image/red4.png" alt="">
-					</div>
+					</a>
 				</div>
 				<button class="arrows right"><img src="image/red5.png" alt=""></button>
+			</div>
+		</section>
+
+		<section class="find-course">
+			<h2>Не нашли нужный курс?</h2>
+			<p class="subtitle">
+				Наши специалисты подберут то, <br>что подойдет именно вам!</br>
+			</p>
+			<form class="form">
+				<div class="row">
+					<div class="field">
+						<label>Цель обучения</label>
+						<select name="targetLearn" required>
+							<option value="" hidden selected>Выберите цель обучения</option>
+							<option value="1">Программирование</option>
+							<option value="2">Маркетинг</option>
+							<option value="3">Дизайн</option>
+							<option value="4">Аналитика</option>
+						</select>
+					</div>
+					<div class="field">
+						<label>Сфера интереса</label>
+						<select name="interests" required>
+							<option value="" hidden selected>Выберите сферу обучения</option>
+							<option value="1">Программирование</option>
+							<option value="2">Маркетинг</option>
+							<option value="3">Дизайн</option>
+							<option value="4">Аналитика</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="field">
+						<label>Бюджет</label>
+						<select name="budget" required>
+							<option value="" hidden selected>Выберите бюджет</option>
+							<option value="1">Программирование</option>
+							<option value="2">Маркетинг</option>
+							<option value="3">Дизайн</option>
+							<option value="4">Аналитика</option>
+						</select>
+					</div>
+					<div class="field">
+						<label>Время на обучение</label>
+						<select name="timeLearn" required>
+							<option value="" hidden selected>Выберите время обучения</option>
+							<option value="1">Программирование</option>
+							<option value="2">Маркетинг</option>
+							<option value="3">Дизайн</option>
+							<option value="4">Аналитика</option>
+						</select>
+					</div>
+				</div>
+				<button class="btn">Найти курсы</button>
+			</form>
+		</section>
+
+		<section class="faq">
+			<h2>Часто задаваемые вопросы</h2>
+			<div class="faq-item">
+				<div class="faq-question">
+					Как начать обучение?
+					<span class="arrow4">↓</span>
+				</div>
+				<div class="faq-answer">
+					Выберите курс и оставьте заявку на сайте.
+				</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">
+					Как проходит аттестация?
+					<span class="arrow4">↓</span>
+				</div>
+				<div class="faq-answer">
+					Аттестация проходит онлайн.
+				</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">
+					Выдается ли диплом государственного образца?
+					<span class="arrow4">↓</span>
+				</div>
+				<div class="faq-answer">
+					Да, при успешном завершении курса.
+				</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">
+					Можно ли учится с мобильного телефона?
+					<span class="arrow4">↓</span>
+				</div>
+				<div class="faq-answer">
+					Да, вы можете учиться с любого устройства.
+				</div>
 			</div>
 		</section>
 	</main>
