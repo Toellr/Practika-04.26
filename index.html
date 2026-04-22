@@ -9,42 +9,69 @@
 	<script src="js/script.js" defer></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
 	<header class="header">
 		<div class="logo"><img src="image/logo.png" alt="">ТГСИИ</div>
 		<nav class="nav">
-			<a href="#">Главная</a>
-			<a href="#">Программы</a>
-			<a href="#">FAQ</a>
-			<a href="#">Контакты</a>
+			<a href="index.html">Главная</a>
+			<a href="#TGSII">Программы</a>
+			<a href="#faq">FAQ</a>
+			<a href="#TGSII4">Контакты</a>
 		</nav>
-		<div class="user">Войти<img src="image/stud.png" alt=""></div>
-	</header>
-	<main>
-
-		<div class="modal" id="modal">
-			<div class="modal-content">
-				<span class="close">&times;</span>
-				<div class="modal-body">
-					<img src="img3.jpg" alt="">
-					<div class="info">
-						<h2>Курс Frontend-разработчика</h2>
-						<p><b>Формат:</b> Очно / Заочно</p>
-						<p><b>Кол-во часов:</b> 144 академических часа</p>
-						<p><b>Преподаватель:</b> Иван Иванов</p>
-						<p><b>Содержание:</b> Полный список тем...</p>
-						<p><b>Документ:</b> Диплом</p>
-						<p><b>Стоимость:</b> 40.000 рублей</p>
-						<button class="btn2">Оформить</button>
+		<button class="btn2" id="openModal">Войти</button>
+		<div id="roleModal" class="modal">
+			<div class="modal-content role-container">
+				<div class="role-list">
+					<div class="role-item">
+						Ученик
+						<div class="submenu">
+							<a href="student.html">Мои курсы</a>
+							<a href="student.html">Учебный план</a>
+							<hr>
+							<a href="student.html">Мои работы</a>
+							<a href="student.html">Календарь заданий</a>
+							<a href="student.html">Оценки</a>
+							<hr>
+							<a href="student.html">Чат поддержки</a>
+						</div>
+					</div>
+					<hr>
+					<div class="role-item">
+						Преподаватель
+						<div class="submenu">
+							<a href="prepod.html">Мои группы</a>
+							<a href="prepod.html">Журнал успеваемости</a>
+							<hr>
+							<a href="prepod.html">Просмотр и оценка работ</a>
+							<a href="prepod.html">Аналитика</a>
+							<hr>
+							<a href="prepod.html">Чат поддержки</a>
+						</div>
+					</div>
+					<hr>
+					<div class="role-item">
+						Методист
+						<div class="submenu">
+							<a href="metodist.html">Конструктор курсов</a>
+							<a href="metodist.html">Создание групп</a>
+							<hr>
+							<a href="metodist.html">Импорт студентов</a>
+							<a href="metodist.html">Библиотека материалов</a>
+							<a href="metodist.html">Управление расписанием</a>
+							<hr>
+							<a href="metodist.html">Чат поддержки</a>
+						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
-
+	</header>
+	<main>
 		<section class="one">
 			<div class="card">
 				<img src="image/3.png" alt="1">
@@ -73,7 +100,7 @@
 			</div>
 		</section>
 
-		<section class="TGSII">
+		<section id="TGSII" class="TGSII">
 			<div class="three">
 				<h2 class="threes">Основные направления ТГСИИ</h2>
 				<div class="brains">
@@ -98,19 +125,39 @@
 			<div class="slider">
 				<button class="arrows left"><img src="image/red0.png" alt=""></button>
 				<div class="cards">
-					<a href="#" class="card3">
+					<div class="card3">
 						<img src="image/red1.png" alt="">
-					</a>
-					<a href="#" class="card3">
+					</div>
+					<div class="card3">
 						<img src="image/red2.png" alt="">
-					</a>
-					<a href="#" class="card3">
+					</div>
+					<div class="card3">
 						<img src="image/red4.png" alt="">
-					</a>
+					</div>
 				</div>
 				<button class="arrows right"><img src="image/red5.png" alt=""></button>
 			</div>
 		</section>
+
+		<div class="modal" id="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal-body">
+					<img src="image/red4.png" alt="">
+					<div class="info">
+						<h2>Курс Frontend-разработчика</h2>
+						<p><b>Формат:</b> Очно / Заочно</p>
+						<p><b>Кол-во часов:</b> 144 академических часа</p>
+						<p><b>Преподаватель:</b> Иван Иванов</p>
+						<p><b>Содержание:</b><a href="" class="text">Полный список тем, можно узнать
+								нажав на эту надпись</a></p>
+						<p><b>Документ:</b> Диплом</p>
+						<p><b>Стоимость:</b> 40.000 рублей</p>
+						<button class="btn2">Оформить</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<section class="find-course">
 			<h2>Не нашли нужный курс?</h2>
@@ -123,20 +170,19 @@
 						<label>Цель обучения</label>
 						<select name="targetLearn" required>
 							<option value="" hidden selected>Выберите цель обучения</option>
-							<option value="1">Программирование</option>
-							<option value="2">Маркетинг</option>
-							<option value="3">Дизайн</option>
-							<option value="4">Аналитика</option>
+							<option value="1">Сменить профессию</option>
+							<option value="2">Повысить квалификацию</option>
+							<option value="3">ПОлучить диплом о ВО</option>
 						</select>
 					</div>
 					<div class="field">
 						<label>Сфера интереса</label>
 						<select name="interests" required>
 							<option value="" hidden selected>Выберите сферу обучения</option>
-							<option value="1">Программирование</option>
-							<option value="2">Маркетинг</option>
+							<option value="1">IT</option>
+							<option value="2">Управление</option>
 							<option value="3">Дизайн</option>
-							<option value="4">Аналитика</option>
+							<option value="4">Строительство</option>
 						</select>
 					</div>
 				</div>
@@ -145,28 +191,44 @@
 						<label>Бюджет</label>
 						<select name="budget" required>
 							<option value="" hidden selected>Выберите бюджет</option>
-							<option value="1">Программирование</option>
-							<option value="2">Маркетинг</option>
-							<option value="3">Дизайн</option>
-							<option value="4">Аналитика</option>
+							<option value="1">до 30 000 руб.</option>
+							<option value="2">30 000 - 60 000 руб.</option>
+							<option value="3">Без ограничений</option>
 						</select>
 					</div>
 					<div class="field">
 						<label>Время на обучение</label>
 						<select name="timeLearn" required>
 							<option value="" hidden selected>Выберите время обучения</option>
-							<option value="1">Программирование</option>
-							<option value="2">Маркетинг</option>
-							<option value="3">Дизайн</option>
-							<option value="4">Аналитика</option>
+							<option value="1">До 3 месяцев</option>
+							<option value="2">6-9 месяцев</option>
+							<option value="3">Более года</option>
 						</select>
 					</div>
 				</div>
-				<button class="btn">Найти курсы</button>
+				<button class="btn" id="openCoursesModalBtn">Подобрать курс</button>
+				<div id="coursesModal" class="courses-modal">
+					<div class="courses-modal__content">
+						<h2 class="courses-modal__title">Подходящие вам курсы</h2>
+						<div class="courses-modal__slider">
+							<div class="course-card small">
+								<img src="image/red4.png">
+							</div>
+							<div class="course-card active">
+								<div class="course-label"></div>
+								<img src="image/red4.png">
+							</div>
+							<div class="course-card small">
+								<img src="image/red4.png">
+							</div>
+						</div>
+						<button class="courses-modal__btn">Записаться</button>
+					</div>
+				</div>
 			</form>
 		</section>
 
-		<section class="faq">
+		<section id="faq" class="faq">
 			<h2>Часто задаваемые вопросы</h2>
 			<div class="faq-item">
 				<div class="faq-question">
@@ -205,7 +267,73 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="TGSII2">
+			<div class="three2">
+				<h2 class="threes2">База знаний ТГСИИ</h2>
+				<div class="brains2">
+					<div class="brain2" onclick="">
+						<a href="book.html"><img src="image/Frame 49.png" alt=""></a>
+					</div>
+					<div class="brain2" onclick="">
+						<a href="book.html"><img src="image/Frame 50.png" alt=""></a>
+					</div>
+					<div class="brain3" onclick="">
+						<a href="book.html"><img src="image/Frame 52.png" alt=""></a>
+					</div>
+					<div class="brain3" onclick="">
+						<a href="book.html"><img src="image/Frame 53.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="TGSII3">
+			<div class="three3">
+				<h2 class="threes3">База знаний ТГСИИ</h2>
+				<div class="brains3">
+					<div class="brain4">
+						<img src="image/Frame 38.png" alt="">
+					</div>
+					<div class="brain4">
+						<img src="image/Frame 39.png" alt="">
+					</div>
+					<div class="brain5">
+						<img src="image/Frame 40.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="TGSII4" class="TGSII4">
+			<div class="three4">
+				<h2 class="threes4">Контакты</h2>
+				<div class="brains4">
+					<div class="brain6">
+						<img src="image/Frame 95.png" alt="">
+					</div>
+					<div class="brain7">
+						<img src="image/Frame 45.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
+	<footer>
+		<div class="container">
+			<div class="left2">
+				<span class="logo2">ТГСИИ</span>
+				<div class="socials">
+					<a href="">VK</a>
+					<a href="">TG</a>
+				</div>
+			</div>
+			<div class="right2">
+				<span>+790833245781</span>
+				<span>info@TSSall.com</span>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

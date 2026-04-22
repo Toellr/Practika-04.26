@@ -33,3 +33,35 @@ window.addEventListener('click', (e) => {
 		modal.style.display = 'none';
 	}
 });
+
+const modal2 = document.getElementById("roleModal");
+const btn = document.getElementById("openModal");
+
+btn.addEventListener("click", () => {
+  modal2.classList.add("show");
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal2) {
+    modal2.classList.remove("show");
+  }
+});
+
+(function() {
+  const modal = document.getElementById('coursesModal');
+  const openBtn = document.getElementById('openCoursesModalBtn');
+
+  if (!modal || !openBtn) return;
+
+  openBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+})();
+
+
